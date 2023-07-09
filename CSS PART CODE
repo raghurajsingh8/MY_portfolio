@@ -1,0 +1,284 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+ 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:#606c6d ;
+}
+
+nav {
+    background-color: #333;
+    color: red; 
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: relative; 
+}
+
+.navbar-left {
+    color: yellow; 
+    font-size: 24px;
+    animation: rainbow 10s linear infinite;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: flex-end; 
+}
+
+.navbar-right li {
+    margin-left: 10px;
+}
+
+.navbar-right li a {
+    color: #dbdcdc;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.navbar-right li.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-link {
+    color: red; 
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 100px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: darkblue; 
+    text-decoration: underline;
+    padding: 5px 10px;
+    display: block;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: pink; 
+    color: yellow; 
+}
+
+.dropdown-content a[data-value]:hover:before {
+    content: attr(data-value);
+    color: yellow;
+    background-color: pink; 
+    padding: 2px 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.dropdown-content a.instagram-link {
+    color: yellow; 
+    text-decoration: underline; 
+}
+
+.dropdown-content a.linkedin-link {
+    color: yellow; 
+    text-decoration: underline; 
+}
+
+.dropdown-content a.codechef-link {
+    color: yellow; 
+    text-decoration: underline; 
+}
+
+.dropdown-content a.hackerrank-link {
+    color: yellow; 
+    text-decoration: underline; 
+}
+
+@keyframes rainbow {
+    0% { color: red; }
+    14% { color: orange; }
+    28% { color: yellow; }
+    42% { color: green; }
+    57% { color: blue; }
+    71% { color: indigo; }
+    85% { color: violet; }
+    100% { color: red; }
+}
+
+.text {
+    font-size: medium;
+    color: white;
+    background-color:#5f6a6b;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+   h1 {
+      color: #ff9900; /* Custom text color (orange) */
+      font-family: "Arial", sans-serif; /* Custom font (Arial) */
+    }
+  h3 {
+      color: green; /* Custom text color (orange) */
+      font-family: "Arial", sans-serif; /* Custom font (Arial) */
+    }
+  h5 {
+      color:lightgreen; /* Custom text color (orange) */
+      font-family: "Arial", sans-serif; /* Custom font (Arial) */
+    }
+
+.box {
+    width: 300px;
+    height: 200px;
+    border-radius: 32px;
+  color:yellow;
+    border: 2px solid #029228;
+    padding: 20px;
+margin-left:5%;
+background-image:url(data:image/jpeg;base64,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);
+  background-repeat:no repeat;
+    margin-right: 10%;
+}
+.box2{
+    width: 300px;
+    height: 200px;
+    border-radius: 32px;
+    border: 2px solid #029228;
+    padding: 20px;
+    background-color: white;
+    margin-left:3%;
+}
+
+.title {
+    font-size: 24px;
+    text-align: center;
+}
+
+.project-link {#ff9900
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.circular-frame {
+    width: 350px;
+    height: 350px;
+    border-radius: 20%;
+    overflow: hidden;
+    border: 2px solid #f3eeee; 
+    margin-left: 20%;
+}
+
+.circular-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer{
+    background-color: #0b0101;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+   color: #dbdcdc;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #000000;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+.circular-frame {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #f3eeee;
+    float: right;
+    margin-right: 10px;
+}
+
+.circular-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+p:hover,
+img:hover,
+button:hover,
+a:hover {
+  transform: scale(1.05);
+}
